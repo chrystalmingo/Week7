@@ -1,38 +1,35 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: 9.5 hours spent in total
 
-> Objective: Find, analyze, recreate, and document vulnerabilities affecting an old version of WordPress
+> Objective: Find, analyze, recreate, and document 3 vulnerabilities affecting an old version of WordPress
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
+1. (Required) Vulnerability: Authenticated Stored Cross-Site Scripting
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2 
+    - Fixed in version: 4.3
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
+  - [ ] Steps to recreate: Make a new post >> Write the following javascript"<script type="text/javascript">alert("You just got Hacked Sucker");</script>" Publish it >> Then view to post!
+  
+2. (Required) Vulnerability: Authenticated Stored Cross-Site Scripting
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: XSS
+    - Tested in version:4.2
+    - Fixed in version: Later Version
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+  - [ ] Steps to recreate: Make a new Post and place the text <img src="https://source.unsplash.com/VW2oU66mwbc" onmouseover="alert('Caught you! :D')"> . You should see something on and alert appear.
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
+    - [Link 1](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-admin/includes/image.php)
+3. (Required) Authenticated Stored Cross-Site Scripting via Image frame
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.6.1
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [ ] Steps to recreate: Upload a new image to the library >> Then click on that image >> After that update the images name with the text ---> ImageName<img src=a onerror=alert(1)>.png
     
     ## Resources
 
@@ -47,7 +44,7 @@ Describe any challenges encountered while doing the work
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2020] [Chrystal Mingo]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
