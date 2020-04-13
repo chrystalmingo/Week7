@@ -22,7 +22,9 @@ Time spent: 9.5 hours spent in total
     - Tested in version:4.2
     - Fixed in version: Later Version
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: Make a new Post and place the text <img src="https://source.unsplash.com/VW2oU66mwbc" onmouseover="alert('Caught you! :D')"> . You should see something on and alert appear.
+  ![](XSS2.gif)
+  - [ ] Steps to recreate: Make a new Post >> Place the text Danger ahead! Potential Hacker
+   <img src="PUT IMAGE LINK HERE" onmouseover="alert('Caught you! :D')"> . You should see something and then an alert appear.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-admin/includes/image.php)
 3. (Required) Authenticated Stored Cross-Site Scripting via Image frame
