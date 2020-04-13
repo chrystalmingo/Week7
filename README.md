@@ -12,7 +12,9 @@ Time spent: 9.5 hours spent in total
     - Tested in version: 4.2 
     - Fixed in version: 4.3
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: Make a new post >> Write the following javascript"<script type="text/javascript">alert("You just got Hacked Sucker");</script>" Publish it >> Then view to post!
+  ![](XSS1.gif)
+  
+  - [ ] Steps to recreate: Make a new post >> Write the following javascript"<script type="text/javascript">alert("You just got Hacked!!!");</script>" Publish it >> Then view to post!
   
 2. (Required) Vulnerability: Authenticated Stored Cross-Site Scripting
   - [ ] Summary: 
