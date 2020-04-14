@@ -1,8 +1,8 @@
-# Project 7&8 - WordPress Pentesting
+# Project 7 - WordPress Pentesting
 
 Time spent: 9.5 hours spent in total
 
-> Objective: Find, analyze, recreate, and document 3 vulnerabilities affecting an old version of WordPress
+> Objective: Find, analyze, recreate, and document 5 vulnerabilities affecting an old version of WordPress
 
 ## Pentesting Report
 
@@ -47,8 +47,19 @@ Time spent: 9.5 hours spent in total
   - [ ] Steps to recreate: Make a new page and paste the code below:
  
     ```
-    [embed src='https://youtube.com/embed/5678\x3csvg onload=alert(1)\x3e'][/embed]
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IZy6Z9_2ZHQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
     ```
+    
+    5. (Optional) Vulnerability Name or ID: User Enumeration
+    - [ ] Summary: This vulnerablility will remote attackers to create a crafted image file name that will inject arbitrary web script.
+    - Vulnerability types: User Enumeration
+    - Tested in version: 4.2
+    - Fixed in version: Later Version
+  - [ ] GIF Walkthrough: 
+   ![](XSS4.gif)
+  - [ ] Steps to recreate: Attempt to log into admin without the use of the password. after that do the same with an incorrect password , finally attempt to log in with user.
+  
     ## Resources
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
