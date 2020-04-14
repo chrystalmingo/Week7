@@ -1,4 +1,4 @@
-# Project 7 - WordPress Pentesting
+# Project 7&8 - WordPress Pentesting
 
 Time spent: 9.5 hours spent in total
 
@@ -33,7 +33,17 @@ Time spent: 9.5 hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.6.1
   - [ ] GIF Walkthrough: 
+   ![](XSS3.gif)
   - [ ] Steps to recreate: Upload a new image to the library >> Then click on that image >> Then in the title section, add the following JavaScript ("<IMG SRC="#" ONERROR="alert('HACKED HACKED HACKED')"/>") "<IMG SRC="#" ONERROR="alert('HACKED HACKED HACKED')"/>" Then clck next to the image name.
+  4. (Optional) Optional)Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
+  - [ ] Summary: This vulnerablity allows remote attackers to inject arbitrary web script or HTML via video URL in YouTube emebeds.
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: Later Version
+  - [ ] GIF Walkthrough: 
+   ![](XSS4.gif)
+  - [ ] Steps to recreate: Make a new page and paste the code below:
+  [embed src='https://youtube.com/embed/5678\x3csvg onload=alert(1)\x3e'][/embed]
     
     ## Resources
 
