@@ -43,7 +43,7 @@ Time spent: 9.5 hours spent in total
     - Tested in version: 4.2
     - Fixed in version: Later Version
   - [ ] GIF Walkthrough: 
-   ![](XSS5.gif)
+   ![](XSS4.gif)
   - [ ] Steps to recreate: Make a new page and paste the code below:
  
     ```
