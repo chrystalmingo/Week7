@@ -43,7 +43,7 @@ Time spent: 9.5 hours spent in total
     - Tested in version: 4.2
     - Fixed in version: Later Version
   - [ ] GIF Walkthrough: 
-   ![](XSS4.gif)
+   ![](XSS5.gif)
   - [ ] Steps to recreate: Make a new page and paste the code below:
  
     ```
@@ -59,7 +59,9 @@ Time spent: 9.5 hours spent in total
   - [ ] GIF Walkthrough: 
    ![](XSS4.gif)
   - [ ] Steps to recreate: Attempt to log into admin without the use of the password. after that do the same with an incorrect password , finally attempt to log in with user.
-  
+   - [x] Link to affected code: 
+     [Link](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+     
     ## Resources
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
