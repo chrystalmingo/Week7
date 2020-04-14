@@ -27,6 +27,7 @@ Time spent: 9.5 hours spent in total
    <img src="PUT IMAGE LINK HERE" onmouseover="alert('Caught you! :D')"> . You should see something and then an alert appear.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-admin/includes/image.php)
+    
 3. (Required) Authenticated Stored Cross-Site Scripting via Image frame
   - [ ] Summary: 
     - Vulnerability types: XSS
@@ -34,7 +35,8 @@ Time spent: 9.5 hours spent in total
     - Fixed in version: 4.6.1
   - [ ] GIF Walkthrough: 
    ![](XSS3.gif)
-  - [ ] Steps to recreate: Upload a new image to the library >> Then click on that image >> Then in the title section, add the following JavaScript ("<IMG SRC="#" ONERROR="alert('HACKED HACKED HACKED')"/>") "<IMG SRC="#" ONERROR="alert('HACKED HACKED HACKED')"/>" Then clck next to the image name.
+  - [ ] Steps to recreate: Upload a new image to the library >> Then click on that image >> Then in the title section, add the following JavaScript "<IMG SRC="#" ONERROR="alert('HACKED HACKED HACKED')"/>" >> Then clck next to the image name.
+  
   4. (Optional) Optional)Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
   - [ ] Summary: This vulnerablity allows remote attackers to inject arbitrary web script or HTML via video URL in YouTube emebeds.
     - Vulnerability types: XSS
@@ -43,8 +45,10 @@ Time spent: 9.5 hours spent in total
   - [ ] GIF Walkthrough: 
    ![](XSS4.gif)
   - [ ] Steps to recreate: Make a new page and paste the code below:
-  [embed src='https://youtube.com/embed/5678\x3csvg onload=alert(1)\x3e'][/embed]
-    
+ 
+    ```
+    [embed src='https://youtube.com/embed/5678\x3csvg onload=alert(1)\x3e'][/embed]
+    ```
     ## Resources
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
