@@ -33,7 +33,7 @@ Time spent: 9.5 hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.6.1
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: Upload a new image to the library >> Then click on that image >> After that update the images name with the text ---> ImageName<img src=a onerror=alert(1)>.png
+  - [ ] Steps to recreate: Upload a new image to the library >> Then click on that image >> Then in the title section, add the following JavaScript ("<IMG SRC="#" ONERROR="alert('HACKED HACKED HACKED')"/>") "<IMG SRC="#" ONERROR="alert('HACKED HACKED HACKED')"/>" Then clck next to the image name.
     
     ## Resources
 
